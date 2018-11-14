@@ -1,3 +1,43 @@
+:root {
+    --page-height: 1280px;
+}
+
 body {
-    min-height: 1180;
+    min-height: var(--page-height);
+    margin: 0 auto;
+}
+
+footer p {
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product-name {
+    width: var(--page-height);
+    height: 323px;
+    background-color: #445161;
+    position: absolute;
+}
+
+.product-name h1 {
+  width: 367px;
+  height: 44px;
+  text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+  font-family: Arial;
+  font-size: 58px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.product-name li::before{
+    content:
+    
 }
