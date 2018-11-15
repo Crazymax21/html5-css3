@@ -1,0 +1,538 @@
+:root {
+    --page-max-width: 1280px;
+    --page-min-width: 950px;
+}
+
+body {
+    max-width: var(--page-max-width);
+    min-width: var(--page-min-width);
+    margin: 0 auto;
+}
+
+footer {
+    clear: both;
+}
+
+footer p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product-name {
+    width: 100%;
+    height: 323px;
+    background-color: #445161;
+}
+
+.product-name div {
+    float: left;
+    width: 50%;
+}
+
+.product-name h1 {
+    width: 100%;
+    height: 44px;
+    text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+    font-family: Arial;
+    font-size: 58px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 50px;
+}
+
+.product-name ul {
+    padding-left: 51px;
+}
+
+.product-name li {
+    list-style: none;
+    width: 100%;
+    height: 36px;
+    text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.product-name li::before {
+    content: url('../img/check-icon.png');
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.product-name figure {
+    width: 469px;
+    height: 214px;
+    background-color: #ffffff;
+    margin: 50px auto;
+}
+
+.about-your-product div {
+    float: left;
+    width: 50%;
+}
+
+.about-your-product h1 {
+    height: 28px;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #445161;
+    margin-left: 50px;
+    margin-top: 49px;
+}
+
+.about-your-product p {
+    display: block;
+    margin-left: 50px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+}
+
+.about-your-product p:first-child {
+    margin-bottom: 20px;
+}
+
+.about-your-product figure {
+    background-color: #445161;
+    margin: 50px auto;
+    width: 430px;
+    height: 245px;
+}
+
+.dignity-and-pluses-product>div {
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.dignity-and-pluses-product {
+    clear: both;
+}
+
+.dignity-and-pluses-product h1 {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #445161;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 50px;
+}
+
+.dignity-and-pluses-product .content div {
+    float: left;
+    width: 50%;
+    background: #f5f5f5;
+}
+
+.dignity-and-pluses-product .content li {
+    list-style-type: none;
+    background: url("../img/pluse-cube.png") no-repeat;
+    font-family: Arial;
+    font-size: 16px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 36px;
+    list-style-position: outside;
+    padding-left: 41px;
+}
+
+.screenshots {
+    clear: both;
+    padding-top: 51px;
+}
+
+.screenshots h1 {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 35px;
+}
+
+.screenshots div {
+    width: 50%;
+    float: left;
+}
+
+.screenshots article {
+    clear: both;
+}
+
+.screenshots figure {
+    width: 200px;
+    height: 150px;
+    float: left;
+    background-color: #445161;
+    margin-left: 50px;
+    margin-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.screenshots h3 {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #445161;
+    margin: 0px;
+}
+
+.screenshots p {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    margin: 0 auto;
+}
+
+
+/*reviews*/
+
+.reviews {
+    clear: both;
+    padding-top: 51px;
+    background-color: #f5f5f5;
+}
+
+.reviews h1 {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #445161;
+    margin: 0px;
+    padding-bottom: 35px;
+    background-color: inherit;
+}
+
+.reviews div {
+    width: 50%;
+    float: left;
+    background-color: inherit;
+}
+
+.reviews article {
+    clear: both;
+    margin-bottom: 24px;
+}
+
+.reviews figure {
+    width: 75px;
+    height: 75px;
+    float: left;
+    background-color: #445161;
+    border-radius: 37.5px;
+    margin-left: 30px;
+    margin-right: 16px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.reviews address {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #989898;
+    margin-top: 15px;
+}
+
+.reviews p {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    margin: 0 auto;
+}
+
+.buy-it-now {
+    clear: both;
+}
+
+.buy-it-now h1 {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #445161;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.buy-it-now .content {
+    max-width: 990px;
+    margin: 0 auto;
+    font-size: 0px;
+}
+
+.buy-it-now .content div {
+    display: inline-block;
+    width: 300px;
+    height: 100%;
+    margin-right: 45px;
+}
+
+.buy-it-now .content div:last-child {
+    margin-right: 0px;
+}
+
+.buy-it-now h3 {
+    display: block;
+    border: 2px solid #445162;
+    background-color: #445162;
+    height: 51px;
+    width: 296px;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 51px;
+    letter-spacing: normal;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.buy-it-now h2 {
+    display: block;
+    border: 2px solid #445162;
+    height: 71px;
+    width: 296px;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 71px;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 0;
+    color: #445162;
+}
+
+.buy-it-now article {
+    border: 2px solid #445162;
+    width: 296px;
+    display: block;
+    margin: 0;
+    background-color: #445162;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.buy-it-now ul {
+    background-color: #445162;
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.buy-it-now ul li {
+    width: 242px;
+    list-style-type: none;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.buy-it-now a {
+    display: block;
+    width: 260px;
+    height: 40px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #445161;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    width: 100%;
+    min-height: 509px;
+    background-color: #445162;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.contacts h1 {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 53px;
+}
+
+.contacts div {
+    float: left;
+    font-size: 0px;
+    width: 49%;
+    text-align: right;
+    height: 100%;
+    margin-right: 75px;
+}
+
+.contacts input {
+    width: 500px;
+    height: 40px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #445162;
+    border-radius: 5px;
+    margin-bottom: 21px;
+}
+
+.contacts textarea {
+    width: 500px;
+    height: 170px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #445162;
+    border-radius: 5px;
+    margin-bottom: 21px;
+}
+
+.contacts input:last-child {
+    width: 140px;
+    height: 40px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #445162;
+    border-radius: 5px;
+    margin-bottom: 21px;
+    margin-right: 31%;
+    background-color: white;
+}
+
+.contacts ul {
+
+}
+
+.contacts li {
+    list-style: none;
+    margin-bottom: 29px;
+}
+
+.contacts li a {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 26px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contacts li a img {
+    margin-right: 5px;
+}
