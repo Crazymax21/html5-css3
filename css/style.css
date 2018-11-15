@@ -9,6 +9,10 @@ body {
     margin: 0 auto;
 }
 
+footer {
+    clear: both;
+}
+
 footer p {
     width: 100%;
     margin: 0 auto;
@@ -298,4 +302,237 @@ footer p {
     text-align: left;
     color: #333333;
     margin: 0 auto;
+}
+
+.buy-it-now {
+    clear: both;
+}
+
+.buy-it-now h1 {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #445161;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.buy-it-now .content {
+    max-width: 990px;
+    margin: 0 auto;
+    font-size: 0px;
+}
+
+.buy-it-now .content div {
+    display: inline-block;
+    width: 300px;
+    height: 100%;
+    margin-right: 45px;
+}
+
+.buy-it-now .content div:last-child {
+    margin-right: 0px;
+}
+
+.buy-it-now h3 {
+    display: block;
+    border: 2px solid #445162;
+    background-color: #445162;
+    height: 51px;
+    width: 296px;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 51px;
+    letter-spacing: normal;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.buy-it-now h2 {
+    display: block;
+    border: 2px solid #445162;
+    height: 71px;
+    width: 296px;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 71px;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 0;
+    color: #445162;
+}
+
+.buy-it-now article {
+    border: 2px solid #445162;
+    width: 296px;
+    display: block;
+    margin: 0;
+    background-color: #445162;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.buy-it-now ul {
+    background-color: #445162;
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.buy-it-now ul li {
+    width: 242px;
+    list-style-type: none;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.buy-it-now a {
+    display: block;
+    width: 260px;
+    height: 40px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #445161;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    width: 100%;
+    min-height: 509px;
+    background-color: #445162;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.contacts h1 {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 53px;
+}
+
+.contacts div {
+    float: left;
+    font-size: 0px;
+    width: 49%;
+    text-align: right;
+    height: 100%;
+    margin-right: 75px;
+}
+
+.contacts input {
+    width: 500px;
+    height: 40px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #445162;
+    border-radius: 5px;
+    margin-bottom: 21px;
+}
+
+.contacts textarea {
+    width: 500px;
+    height: 170px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #445162;
+    border-radius: 5px;
+    margin-bottom: 21px;
+}
+
+.contacts input:last-child {
+    width: 140px;
+    height: 40px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #445162;
+    border-radius: 5px;
+    margin-bottom: 21px;
+    margin-right: 31%;
+    background-color: white;
+}
+
+.contacts ul {
+
+}
+
+.contacts li {
+    list-style: none;
+    margin-bottom: 29px;
+}
+
+.contacts li a {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 26px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contacts li a img {
+    margin-right: 5px;
 }
