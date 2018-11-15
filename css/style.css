@@ -226,3 +226,76 @@ footer p {
     color: #333333;
     margin: 0 auto;
 }
+
+
+/*reviews*/
+
+.reviews {
+    clear: both;
+    padding-top: 51px;
+    background-color: #f5f5f5;
+}
+
+.reviews h1 {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #445161;
+    margin: 0px;
+    padding-bottom: 35px;
+    background-color: inherit;
+}
+
+.reviews div {
+    width: 50%;
+    float: left;
+    background-color: inherit;
+}
+
+.reviews article {
+    clear: both;
+    margin-bottom: 24px;
+}
+
+.reviews figure {
+    width: 75px;
+    height: 75px;
+    float: left;
+    background-color: #445161;
+    border-radius: 37.5px;
+    margin-left: 30px;
+    margin-right: 16px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.reviews address {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #989898;
+    margin-top: 15px;
+}
+
+.reviews p {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    margin: 0 auto;
+}
