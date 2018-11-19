@@ -1,6 +1,30 @@
 :root {
     --page-max-width: 1280px;
-    --page-min-width: 950px;
+    --page-min-width: 490px;
+}
+
+@media (max-width: 950px) {
+    .product-name div {
+        flex-direction: column;
+    }
+    .about-your-product {
+        flex-direction: column;
+    }
+    .dignity-and-pluses-product .content {
+        flex-direction: column;
+    }
+    .dignity-and-pluses-product .content div:nth-child(2) {
+        padding-left: 50px;
+    }
+    .dignity-and-pluses-product .content ul:first-child li:last-child {
+        margin-bottom: 0px;
+    }
+    .screenshots h3 {
+        clear: both;
+    }
+    .buy-it-now .content {
+        justify-content: flex-start;
+    }
 }
 
 body {
@@ -21,16 +45,21 @@ footer p {
 
 .product-name {
     width: 100%;
-    height: 323px;
+}
+
+.product-name .content {
+    width: 100%;
     background-color: #445161;
+    display: flex;
+    justify-content: space-between;
 }
 
-.product-name div {
-    float: left;
-    width: 50%;
+.product-name .content div {
+    display: inline-flex;
+    flex-direction: column;
 }
 
-.product-name h1 {
+.product-name .content div h1 {
     width: 100%;
     height: 44px;
     text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
@@ -78,12 +107,17 @@ footer p {
     width: 469px;
     height: 214px;
     background-color: #ffffff;
-    margin: 50px auto;
+    margin: 40px auto;
+}
+
+.about-your-product {
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-your-product div {
-    float: left;
-    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .about-your-product h1 {
@@ -102,8 +136,8 @@ footer p {
 }
 
 .about-your-product p {
-    display: block;
     margin-left: 50px;
+    max-width: 590px;
     font-family: Arial;
     font-size: 14px;
     font-weight: normal;
@@ -113,6 +147,7 @@ footer p {
     letter-spacing: normal;
     text-align: left;
     color: #333333;
+    padding-right: 10px;
 }
 
 .about-your-product p:first-child {
@@ -126,13 +161,15 @@ footer p {
     height: 245px;
 }
 
+.dignity-and-pluses-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .dignity-and-pluses-product>div {
     width: 100%;
     background: #f5f5f5;
-}
-
-.dignity-and-pluses-product {
-    clear: both;
 }
 
 .dignity-and-pluses-product h1 {
@@ -149,10 +186,27 @@ footer p {
     padding-top: 50px;
 }
 
+.dignity-and-pluses-product .content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .dignity-and-pluses-product .content div {
-    float: left;
-    width: 50%;
     background: #f5f5f5;
+}
+
+.dignity-and-pluses-product .content div:nth-child(1) {
+    padding-left: 50px;
+    margin-right: 23px;
+}
+
+.dignity-and-pluses-product .content div:nth-child(2) {
+    margin-right: 23px;
+}
+
+.dignity-and-pluses-product .content ul {
+    padding-left: 0px;
+    margin-top: 29px;
 }
 
 .dignity-and-pluses-product .content li {
@@ -167,8 +221,13 @@ footer p {
     padding-left: 41px;
 }
 
+.dignity-and-pluses-product .content ul li:last-child {
+    margin-bottom: 51px;
+}
+
 .screenshots {
-    clear: both;
+    display: flex;
+    flex-direction: column;
     padding-top: 51px;
 }
 
@@ -185,13 +244,9 @@ footer p {
     margin-bottom: 35px;
 }
 
-.screenshots div {
-    width: 50%;
-    float: left;
-}
-
-.screenshots article {
-    clear: both;
+.screenshots .content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .screenshots figure {
@@ -216,6 +271,7 @@ footer p {
     text-align: left;
     color: #445161;
     margin: 0px;
+    margin-left: 50px;
 }
 
 .screenshots p {
@@ -228,14 +284,16 @@ footer p {
     letter-spacing: normal;
     text-align: left;
     color: #333333;
-    margin: 0 auto;
+    margin-right: 10px;
+    margin-left: 50px;
 }
 
 
 /*reviews*/
 
 .reviews {
-    clear: both;
+    display: flex;
+    flex-direction: column;
     padding-top: 51px;
     background-color: #f5f5f5;
 }
@@ -255,14 +313,12 @@ footer p {
     background-color: inherit;
 }
 
-.reviews div {
-    width: 50%;
-    float: left;
-    background-color: inherit;
+.reviews .content {
+    display: flex;
+    flex-direction: row;
 }
 
 .reviews article {
-    clear: both;
     margin-bottom: 24px;
 }
 
@@ -305,7 +361,9 @@ footer p {
 }
 
 .buy-it-now {
-    clear: both;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .buy-it-now h1 {
@@ -323,24 +381,19 @@ footer p {
 }
 
 .buy-it-now .content {
-    max-width: 990px;
-    margin: 0 auto;
-    font-size: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .buy-it-now .content div {
-    display: inline-block;
-    width: 300px;
-    height: 100%;
-    margin-right: 45px;
-}
-
-.buy-it-now .content div:last-child {
-    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .buy-it-now h3 {
-    display: block;
     border: 2px solid #445162;
     background-color: #445162;
     height: 51px;
@@ -360,7 +413,6 @@ footer p {
 }
 
 .buy-it-now h2 {
-    display: block;
     border: 2px solid #445162;
     height: 71px;
     width: 296px;
@@ -388,7 +440,6 @@ footer p {
 
 .buy-it-now ul {
     background-color: #445162;
-    display: block;
     margin: 0;
     width: 100%;
     padding-left: 0;
@@ -433,7 +484,8 @@ footer p {
 
 .contacts {
     width: 100%;
-    min-height: 509px;
+    display: flex;
+    flex-direction: column;
     background-color: #445162;
     margin: 0 auto;
     padding: 0;
@@ -452,16 +504,18 @@ footer p {
     padding-top: 53px;
 }
 
-.contacts div {
-    float: left;
-    font-size: 0px;
-    width: 49%;
-    text-align: right;
-    height: 100%;
-    margin-right: 75px;
+.contacts .content {
+    display: flex;
+    justify-content: center;
 }
 
-.contacts input {
+contacts .content div:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contacts .content div input {
     width: 500px;
     height: 40px;
     font-family: Arial;
@@ -477,7 +531,7 @@ footer p {
     margin-bottom: 21px;
 }
 
-.contacts textarea {
+.contacts .content div textarea {
     width: 500px;
     height: 170px;
     font-family: Arial;
@@ -493,7 +547,7 @@ footer p {
     margin-bottom: 21px;
 }
 
-.contacts input:last-child {
+.contacts .content div input:last-child {
     width: 140px;
     height: 40px;
     font-family: Arial;
@@ -507,20 +561,19 @@ footer p {
     color: #445162;
     border-radius: 5px;
     margin-bottom: 21px;
-    margin-right: 31%;
+    margin-left: 50%;
+    left: -70px;
     background-color: white;
 }
 
-.contacts ul {
+.contacts .content div ul {}
 
-}
-
-.contacts li {
+.contacts .content div li {
     list-style: none;
     margin-bottom: 29px;
 }
 
-.contacts li a {
+.contacts .content div li a {
     font-family: Arial;
     font-size: 16px;
     font-weight: normal;
@@ -533,6 +586,10 @@ footer p {
     text-decoration: none;
 }
 
-.contacts li a img {
+.contacts .content div li a img {
     margin-right: 5px;
+}
+
+.contacts .content div>img {
+    margin-left: 45px;
 }
