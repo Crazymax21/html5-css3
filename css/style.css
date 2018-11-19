@@ -25,6 +25,18 @@
     .buy-it-now .content {
         justify-content: flex-start;
     }
+    .contacts .content {
+        flex-direction: column;
+    }
+    .reviews .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .contacts .content div {
+        width: 100%;
+    }
 }
 
 body {
@@ -82,7 +94,6 @@ footer p {
 .product-name li {
     list-style: none;
     width: 100%;
-    height: 36px;
     text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
     font-family: Arial;
     font-size: 18px;
@@ -107,7 +118,8 @@ footer p {
     width: 469px;
     height: 214px;
     background-color: #ffffff;
-    margin: 40px auto;
+    margin-top: 50px;
+    margin-right: 50px;
 }
 
 .about-your-product {
@@ -120,7 +132,7 @@ footer p {
     flex-direction: column;
 }
 
-.about-your-product h1 {
+.about-your-product h2 {
     height: 28px;
     font-family: Arial;
     font-size: 30px;
@@ -156,9 +168,10 @@ footer p {
 
 .about-your-product figure {
     background-color: #445161;
-    margin: 50px auto;
+    margin-left: 50px;
     width: 430px;
     height: 245px;
+    margin-right: 50px;
 }
 
 .dignity-and-pluses-product {
@@ -172,7 +185,7 @@ footer p {
     background: #f5f5f5;
 }
 
-.dignity-and-pluses-product h1 {
+.dignity-and-pluses-product h2 {
     font-family: Arial;
     font-size: 30px;
     font-weight: normal;
@@ -231,7 +244,7 @@ footer p {
     padding-top: 51px;
 }
 
-.screenshots h1 {
+.screenshots h2 {
     font-family: Arial;
     font-size: 30px;
     font-weight: normal;
@@ -298,7 +311,7 @@ footer p {
     background-color: #f5f5f5;
 }
 
-.reviews h1 {
+.reviews h2 {
     font-family: Arial;
     font-size: 30px;
     font-weight: normal;
@@ -315,7 +328,6 @@ footer p {
 
 .reviews .content {
     display: flex;
-    flex-direction: row;
 }
 
 .reviews article {
@@ -332,6 +344,12 @@ footer p {
     margin-right: 16px;
     margin-top: 0px;
     margin-bottom: 30px;
+}
+
+.reviews article {
+    background-color: #ebebeb;
+    overflow: hidden;
+    
 }
 
 .reviews address {
@@ -366,7 +384,7 @@ footer p {
     flex-direction: column;
 }
 
-.buy-it-now h1 {
+.buy-it-now h2 {
     font-family: Arial;
     font-size: 30px;
     font-weight: normal;
@@ -386,6 +404,7 @@ footer p {
     justify-content: space-around;
     align-items: flex-end;
     flex-wrap: wrap;
+    padding-bottom: 49px;
 }
 
 .buy-it-now .content div {
@@ -412,7 +431,7 @@ footer p {
     margin-bottom: 0;
 }
 
-.buy-it-now h2 {
+.buy-it-now h4 {
     border: 2px solid #445162;
     height: 71px;
     width: 296px;
@@ -491,7 +510,7 @@ footer p {
     padding: 0;
 }
 
-.contacts h1 {
+.contacts h2 {
     font-family: Arial;
     font-size: 30px;
     font-weight: normal;
@@ -507,16 +526,15 @@ footer p {
 .contacts .content {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
-contacts .content div:first-child {
-    display: flex;
-    justify-content: center;
+.contacts .content div:first-child {
+    width: 500px;
 }
-
 
 .contacts .content div input {
-    width: 500px;
+    width: 100%;
     height: 40px;
     font-family: Arial;
     font-size: 16px;
@@ -532,7 +550,7 @@ contacts .content div:first-child {
 }
 
 .contacts .content div textarea {
-    width: 500px;
+    width: 100%;
     height: 170px;
     font-family: Arial;
     font-size: 16px;
@@ -561,8 +579,7 @@ contacts .content div:first-child {
     color: #445162;
     border-radius: 5px;
     margin-bottom: 21px;
-    margin-left: 50%;
-    left: -70px;
+    margin-left: calc(50% - 70px);
     background-color: white;
 }
 
@@ -571,6 +588,7 @@ contacts .content div:first-child {
 .contacts .content div li {
     list-style: none;
     margin-bottom: 29px;
+    text-align: left;
 }
 
 .contacts .content div li a {
