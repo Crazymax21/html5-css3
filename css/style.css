@@ -610,3 +610,76 @@ footer p {
 .contacts .content div>img {
     margin-left: 45px;
 }
+
+.contacts .content .twitter_link {
+    display: block;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 45px;
+    background-image: url('../img/twitter-brands.svg');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border-radius: 21px;
+    text-decoration: none;
+    margin-left: 45px;
+    float: left;
+}
+
+.contacts .content .facebook_link {
+    display: block;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 45px;
+    background-image: url('../img/facebook-f-brands.svg');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border-radius: 21px;
+    text-decoration: none;
+    margin-left: 5px;
+    float: left;
+}
+
+.contacts .content .linkedin_link {
+    display: block;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 45px;
+    background-image: url('../img/linkedin-in-brands.svg');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border-radius: 21px;
+    text-decoration: none;
+    margin-left: 5px;
+    float: left;
+}
+
+.contacts .content .google_link {
+    display: block;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 45px;
+    background-image: url('../img/google-brands.svg');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border-radius: 21px;
+    text-decoration: none;
+    margin-left: 5px;
+    float: left;
+}
+
+.contacts .content .links:hover {
+     background-color: coral;   
+}
+
