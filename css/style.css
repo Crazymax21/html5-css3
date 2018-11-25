@@ -114,10 +114,9 @@ footer p {
     text-align: left;
 }
 
-.product-name figure {
-    width: 469px;
+.product-name video {
+    width: 469hv;
     height: 214px;
-    background-color: #ffffff;
     margin-top: 50px;
     margin-right: 50px;
 }
