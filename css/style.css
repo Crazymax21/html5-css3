@@ -43,6 +43,8 @@ body {
     max-width: var(--page-max-width);
     min-width: var(--page-min-width);
     margin: 0 auto;
+    background-image: url('../img/light-grey-terrazzo.png');
+    background-attachment:fixed;
 }
 
 footer {
@@ -124,6 +126,11 @@ footer p {
 .about-your-product {
     display: flex;
     justify-content: space-between;
+    background-image: url('../img/cat-solid.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-size: 3%;
 }
 
 .about-your-product div {
@@ -166,7 +173,9 @@ footer p {
 }
 
 .about-your-product figure {
-    background-color: #445161;
+    background-image: url('../img/about_product_pic.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-left: 50px;
     width: 430px;
     height: 245px;
@@ -300,6 +309,10 @@ footer p {
     margin-left: 50px;
 }
 
+.screenshots .content img {
+    height: 100%;
+    width: 100%;
+}
 
 /*reviews*/
 
@@ -343,6 +356,12 @@ footer p {
     margin-right: 16px;
     margin-top: 0px;
     margin-bottom: 30px;
+}
+
+.reviews .content img {
+    height: 100%;
+    width: 100%;
+    border-radius: 37.5px;
 }
 
 .reviews article {
@@ -681,5 +700,22 @@ footer p {
 
 .contacts .content .links:hover {
      background-color: coral;   
+}
+
+.contacts .content .facebook_link {
+    display: block;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 45px;
+    background-color: white;
+    border-radius: 21px;
+    text-decoration: none;
+    margin-left: 5px;
+    float: left;
+}
+
+.contacts .content .facebook_link i {
+    transform: scale(1.3)
 }
 
