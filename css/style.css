@@ -1,41 +1,74 @@
 :root {
     --page-max-width: 1280px;
-    --page-min-width: 490px;
+    --page-min-width: 320px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 850px) {
     .product-name div {
         flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
     }
+    
+    .product-name video {
+        margin-top: 10px;
+    }
+
     .about-your-product {
         flex-direction: column;
+        margin: 0 auto;
     }
+
     .dignity-and-pluses-product .content {
         flex-direction: column;
+        margin: 0 auto;
     }
+
     .dignity-and-pluses-product .content div:nth-child(2) {
         padding-left: 50px;
     }
+
     .dignity-and-pluses-product .content ul:first-child li:last-child {
         margin-bottom: 0px;
     }
+
     .screenshots h3 {
         clear: both;
     }
+
     .buy-it-now .content {
         justify-content: flex-start;
     }
+
     .contacts .content {
         flex-direction: column;
     }
+
     .reviews .content {
         flex-direction: column;
     }
 }
 
 @media (max-width: 500px) {
-    .contacts .content div {
-        width: 100%;
+    .product-name .content {
+        margin: 0 auto;
+    }
+
+    .product-name .content div h1 {
+        margin-bottom: 0;
+    }    
+
+    .product-name .content div ul {
+        padding-left: 10px;
+        transform: scale(0.8);
+        margin: 0;
+    }
+
+    .product-name .content div:last-child,
+    .product-name video {
+        height: 100%;
+        width: calc(100% - 10px);
+        padding: 5px;
     }
 }
 
@@ -44,7 +77,7 @@ body {
     min-width: var(--page-min-width);
     margin: 0 auto;
     background-image: url('../img/light-grey-terrazzo.png');
-    background-attachment:fixed;
+    background-attachment: fixed;
 }
 
 footer {
@@ -53,19 +86,19 @@ footer {
 
 footer p {
     width: 100%;
-    margin: 0 auto;
     text-align: center;
 }
 
 .product-name {
-    width: 100%;
+    margin: 0 auto;
 }
 
 .product-name .content {
-    width: 100%;
+    max-width: 100%;
     background-color: #445161;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .product-name .content div {
@@ -73,9 +106,11 @@ footer p {
     flex-direction: column;
 }
 
+.product-name .content div:last-child {
+    margin: 0 auto;
+}
+
 .product-name .content div h1 {
-    width: 100%;
-    height: 44px;
     text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
     font-family: Arial;
     font-size: 58px;
@@ -86,7 +121,7 @@ footer p {
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
 .product-name ul {
@@ -95,7 +130,6 @@ footer p {
 
 .product-name li {
     list-style: none;
-    width: 100%;
     text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
     font-family: Arial;
     font-size: 18px;
@@ -112,15 +146,15 @@ footer p {
     content: url('../img/check-icon.png');
     font-size: 20px;
     color: white;
-    margin-right: 10px;
+    padding-right: 10px;
     text-align: left;
 }
 
+
 .product-name video {
-    width: 469hv;
-    height: 214px;
-    margin-top: 50px;
-    margin-right: 50px;
+    max-width: 459px;
+    max-height: 214px;
+    margin-top: calc(40% - 107px);
 }
 
 .about-your-product {
@@ -188,7 +222,7 @@ footer p {
     justify-content: flex-start;
 }
 
-.dignity-and-pluses-product>div {
+.dignity-and-pluses-product > div {
     width: 100%;
     background: #f5f5f5;
 }
@@ -367,7 +401,7 @@ footer p {
 .reviews article {
     background-color: #ebebeb;
     overflow: hidden;
-    
+
 }
 
 .reviews address {
@@ -626,7 +660,7 @@ footer p {
     margin-right: 5px;
 }
 
-.contacts .content div>img {
+.contacts .content div > img {
     margin-left: 45px;
 }
 
@@ -699,7 +733,7 @@ footer p {
 }
 
 .contacts .content .links:hover {
-     background-color: coral;   
+    background-color: coral;
 }
 
 .contacts .content .facebook_link {
@@ -718,4 +752,3 @@ footer p {
 .contacts .content .facebook_link i {
     transform: scale(1.3)
 }
-
