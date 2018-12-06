@@ -9,19 +9,32 @@
         justify-content: center;
         margin: 0 auto;
     }
-    
+
     .product-name video {
         margin-top: 10px;
     }
 
     .about-your-product {
         flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .about-your-product div:last-child {
+        margin-left: 50px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .about-your-product img {
         margin: 0 auto;
+        padding: 0;
+        display: block;
     }
 
     .dignity-and-pluses-product .content {
-        flex-direction: column;
         margin: 0 auto;
+        flex-direction: column;
     }
 
     .dignity-and-pluses-product .content div:nth-child(2) {
@@ -41,9 +54,9 @@
     }
 
     .contacts .content {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
-
+    
     .reviews .content {
         flex-direction: column;
     }
@@ -56,7 +69,7 @@
 
     .product-name .content div h1 {
         margin-bottom: 0;
-    }    
+    }
 
     .product-name .content div ul {
         padding-left: 10px;
@@ -64,11 +77,46 @@
         margin: 0;
     }
 
-    .product-name .content div:last-child,
     .product-name video {
         height: 100%;
         width: calc(100% - 10px);
-        padding: 5px;
+        transform: scale(0.8);
+        margin: 0;
+    }
+
+    .screenshots .content div article img {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .screenshots .content div {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 429px) {
+    .product-name .content {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .product-name .content div h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-name .content div ul {
+        padding-left: 10px;
+        transform: scale(0.8);
+        margin: 0;
+    }
+
+    .product-name video {
+        height: 100%;
+        width: calc(100% - 10px);
+        transform: scale(0.8);
     }
 }
 
@@ -90,6 +138,7 @@ footer p {
 }
 
 .product-name {
+    max-width: var(--page-max-width);
     margin: 0 auto;
 }
 
@@ -115,13 +164,8 @@ footer p {
     font-family: Arial;
     font-size: 58px;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #ffffff;
-    padding-left: 50px;
 }
 
 .product-name ul {
@@ -158,7 +202,9 @@ footer p {
 }
 
 .about-your-product {
+    max-width: var(--page-max-width);
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     background-image: url('../img/cat-solid.svg');
     background-repeat: no-repeat;
@@ -168,12 +214,10 @@ footer p {
 }
 
 .about-your-product div {
-    display: inline-flex;
     flex-direction: column;
 }
 
 .about-your-product h2 {
-    height: 28px;
     font-family: Arial;
     font-size: 30px;
     font-weight: normal;
@@ -206,14 +250,16 @@ footer p {
     margin-bottom: 20px;
 }
 
-.about-your-product figure {
-    background-image: url('../img/about_product_pic.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 50px;
-    width: 430px;
-    height: 245px;
+.about-your-product div:last-child {
+    max-width: 430px;
+    max-height: 245px;
     margin-right: 50px;
+    padding-top: 60px;
+}
+
+.about-your-product img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .dignity-and-pluses-product {
@@ -230,9 +276,7 @@ footer p {
 .dignity-and-pluses-product h2 {
     font-family: Arial;
     font-size: 30px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
+    font-weight:100;
     letter-spacing: normal;
     text-align: center;
     color: #445161;
@@ -284,6 +328,7 @@ footer p {
     display: flex;
     flex-direction: column;
     padding-top: 51px;
+    margin: 0 auto;
 }
 
 .screenshots h2 {
@@ -302,11 +347,18 @@ footer p {
 .screenshots .content {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
-.screenshots figure {
-    width: 200px;
-    height: 150px;
+.screenshots .content div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.screenshots img {
+    max-width: 200px;
+    max-height: 150px;
     float: left;
     background-color: #445161;
     margin-left: 50px;
@@ -341,11 +393,6 @@ footer p {
     color: #333333;
     margin-right: 10px;
     margin-left: 50px;
-}
-
-.screenshots .content img {
-    height: 100%;
-    width: 100%;
 }
 
 /*reviews*/
@@ -497,6 +544,7 @@ footer p {
     text-align: center;
     margin: 0;
     color: #445162;
+    background-color: white;
 }
 
 .buy-it-now article {
@@ -582,7 +630,7 @@ footer p {
 }
 
 .contacts .content div:first-child {
-    width: 500px;
+    width: 50%;
 }
 
 .contacts .content div input {
@@ -634,8 +682,6 @@ footer p {
     margin-left: calc(50% - 70px);
     background-color: white;
 }
-
-.contacts .content div ul {}
 
 .contacts .content div li {
     list-style: none;
